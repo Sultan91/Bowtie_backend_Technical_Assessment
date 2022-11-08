@@ -2,7 +2,6 @@ from django.db import models
 from django_countries.fields import CountryField
 from djmoney.models.fields import MoneyField, CurrencyField
 from .choices import DOCTOR_SPECIFICATION_CHOICES, DAY_CHOICES, LANGUAGE_CHOICES
-from .managers import DoctorManager
 from django.conf import settings
 
 
@@ -47,8 +46,6 @@ class Doctor(models.Model):
                                             related_name='doctor')
     schedule = models.OneToOneField(Schedule, on_delete=models.SET_NULL, null=True, blank=True, related_name='doctor')
     language = models.CharField(default=LANGUAGE_CHOICES.english, choices=LANGUAGE_CHOICES, blank=True, max_length=60)
-
-    objects = DoctorManager()
 
 
 class Workday(models.Model):
