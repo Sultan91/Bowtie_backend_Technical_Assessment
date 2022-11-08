@@ -8,7 +8,7 @@ Main endpoint: GET `http://127.0.0.1:8000/doctor/doctors/` (list of doctors)
 - GET `http://127.0.0.1:8000/doctor/doctors/<id>` doctor detail
 - GET `http://127.0.0.1:8000/doctor/doctors/?district=Central&expand=consultation_fee,address` filter by district
 
-Other
+Other cases such as create Doctor, filtering can be found in `doctor.test.py`
 
 
 1. Choice of Framework & Library: Django & DRF
