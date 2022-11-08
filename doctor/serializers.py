@@ -1,6 +1,5 @@
 from rest_flex_fields import FlexFieldsModelSerializer
 from rest_framework import serializers
-#from rest_framework_serializer_extensions.serializers import SerializerExtensionsMixin
 
 from .models import Doctor, Address, ConsultationFee, Schedule, Workday
 

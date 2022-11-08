@@ -1,6 +1,5 @@
 from django_filters.rest_framework import DjangoFilterBackend
-from rest_framework import viewsets, filters, mixins
-#from rest_framework_serializer_extensions.views import SerializerExtensionsAPIViewMixin
+from rest_framework import viewsets, filters
 
 from .filters import DoctorFilter
 from .models import Doctor
