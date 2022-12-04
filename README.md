@@ -1,4 +1,4 @@
-# necktie_home_assessment
+# bowtie_home_assessment
 Hello!
 - To run server create venv and run `pip install -r requirements.txt` from root folder
 - `python3 manage.py migrate`
